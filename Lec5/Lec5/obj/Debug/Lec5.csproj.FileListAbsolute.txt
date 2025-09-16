@@ -1,0 +1,8 @@
+D:\.net\Lec5\Lec5\bin\Debug\Lec5.exe.config
+D:\.net\Lec5\Lec5\bin\Debug\Lec5.exe
+D:\.net\Lec5\Lec5\bin\Debug\Lec5.pdb
+D:\.net\Lec5\Lec5\obj\Debug\Lec5.csproj.AssemblyReference.cache
+D:\.net\Lec5\Lec5\obj\Debug\Lec5.csproj.CoreCompileInputs.cache
+D:\.net\Lec5\Lec5\obj\Debug\Lec5.exe
+D:\.net\Lec5\Lec5\obj\Debug\Lec5.pdb
+D:\.net\Lec5\Lec5\obj\Debug\Lec5.exe.config

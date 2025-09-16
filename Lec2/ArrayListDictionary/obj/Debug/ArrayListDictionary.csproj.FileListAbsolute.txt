@@ -1,0 +1,8 @@
+D:\.net\Lec2\ArrayListDictionary\bin\Debug\ArrayListDictionary.exe.config
+D:\.net\Lec2\ArrayListDictionary\bin\Debug\ArrayListDictionary.exe
+D:\.net\Lec2\ArrayListDictionary\bin\Debug\ArrayListDictionary.pdb
+D:\.net\Lec2\ArrayListDictionary\obj\Debug\ArrayListDictionary.csproj.AssemblyReference.cache
+D:\.net\Lec2\ArrayListDictionary\obj\Debug\ArrayListDictionary.csproj.CoreCompileInputs.cache
+D:\.net\Lec2\ArrayListDictionary\obj\Debug\ArrayListDictionary.exe
+D:\.net\Lec2\ArrayListDictionary\obj\Debug\ArrayListDictionary.pdb
+D:\.net\Lec2\ArrayListDictionary\obj\Debug\ArrayListDictionary.exe.config

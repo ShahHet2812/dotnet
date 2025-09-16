@@ -1,0 +1,8 @@
+D:\.net\Lec2\Lec2\bin\Debug\Lec2.exe.config
+D:\.net\Lec2\Lec2\bin\Debug\Lec2.exe
+D:\.net\Lec2\Lec2\bin\Debug\Lec2.pdb
+D:\.net\Lec2\Lec2\obj\Debug\Lec2.csproj.AssemblyReference.cache
+D:\.net\Lec2\Lec2\obj\Debug\Lec2.csproj.CoreCompileInputs.cache
+D:\.net\Lec2\Lec2\obj\Debug\Lec2.exe
+D:\.net\Lec2\Lec2\obj\Debug\Lec2.pdb
+D:\.net\Lec2\Lec2\obj\Debug\Lec2.exe.config
