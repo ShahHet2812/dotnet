@@ -1,0 +1,8 @@
+D:\.net\Person\Person\bin\Debug\Person.exe.config
+D:\.net\Person\Person\bin\Debug\Person.exe
+D:\.net\Person\Person\bin\Debug\Person.pdb
+D:\.net\Person\Person\obj\Debug\Person.csproj.AssemblyReference.cache
+D:\.net\Person\Person\obj\Debug\Person.csproj.CoreCompileInputs.cache
+D:\.net\Person\Person\obj\Debug\Person.exe
+D:\.net\Person\Person\obj\Debug\Person.pdb
+D:\.net\Person\Person\obj\Debug\Person.exe.config
