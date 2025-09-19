@@ -30,15 +30,15 @@ namespace WindowsFormsApp2
         private void btsub_Click(object sender, EventArgs e)
         {
             String u = tbusername.Text;
-            String p=tbpass.Text;
+            String p = tbpass.Text;
             if (u == "Admin" && p == "2812")
             {
-                this.DialogResult=DialogResult.OK;
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Invalid", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Invalid", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -47,11 +47,11 @@ namespace WindowsFormsApp2
         {
             if (chpass.Checked == false)
             {
-                tbpass.UseSystemPasswordChar=true;
+                tbpass.UseSystemPasswordChar = true;
             }
             else
             {
-                tbpass.UseSystemPasswordChar=false;
+                tbpass.UseSystemPasswordChar = false;
             }
         }
     }

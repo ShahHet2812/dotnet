@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+        NpgsqlConnection con;
+        string constring = "Host=localhost;Port=5432;Username=postgres;Password=ljiet;Database=Het";
         public Form1()
         {
             InitializeComponent();
@@ -67,6 +70,8 @@ namespace WindowsFormsApp2
             {
                 MessageBox.Show("Form is now visible");
             }
+            DbConnect();
+            LoadData();
 
         }
 
@@ -121,18 +126,48 @@ namespace WindowsFormsApp2
         }
         bool Price()
         {
-            return Double.TryParse(tbprice.Text,out double price);
+            return Double.TryParse(tbprice.Text, out double price);
         }
 
         private void btsubmit_Click(object sender, EventArgs e)
         {
-            if (ValidateName() && ValidateNumber() && Price() && cbqty.SelectedIndex!=-1 && (rbelec.Checked || rbgame.Checked))
+            if (ValidateName() && ValidateNumber() && Price() && cbqty.SelectedIndex != -1 && (rbelec.Checked || rbgame.Checked))
             {
                 MessageBox.Show("Validation Successful");
             }
             else
             {
                 MessageBox.Show("Enter field Carefully");
+            }
+        }
+        void DbConnect()
+        {
+            try
+            {
+                con = new NpgsqlConnection(constring);
+                con.Open();
+                MessageBox.Show("Postgres Connection Successful");
+            }
+            catch
+            {
+                MessageBox.Show("Connection Failed");
+            }
+        }
+        void LoadData()
+        {
+            con.Close();
+            try
+            {
+                con.Open();
+                string displayquery = "Select * from MANAGE";
+                NpgsqlDataAdapter da=new NpgsqlDataAdapter(displayquery,con);
+                DataTable dt=new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch
+            {
+                MessageBox.Show("Data Fetching Failed");
             }
         }
     }
