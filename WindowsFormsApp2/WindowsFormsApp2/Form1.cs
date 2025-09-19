@@ -116,7 +116,7 @@ namespace WindowsFormsApp2
             }
             if (tbnumber.Text.All(Char.IsDigit) == false)
             {
-                MessageBox.Show("all number must be numeric.");
+                MessageBox.Show("All number must be numeric.");
                 return false;
             }
             else
@@ -134,6 +134,25 @@ namespace WindowsFormsApp2
             if (ValidateName() && ValidateNumber() && Price() && cbqty.SelectedIndex != -1 && (rbelec.Checked || rbgame.Checked))
             {
                 MessageBox.Show("Validation Successful");
+                String insertquery = "INSERT INTO MANAGE(pname,pnumber,price,quantity,category,membership,buydate)values(@pname,@pnumber,@price,@quantity,@category,@membership,@buydate)";
+                NpgsqlCommand cmd=new NpgsqlCommand(insertquery,con);
+                cmd.Parameters.AddWithValue("@pname",tbname.Text);
+                cmd.Parameters.AddWithValue("@pnumber", long.Parse(tbnumber.Text));
+                cmd.Parameters.AddWithValue("@price", double.Parse(tbprice.Text));
+                cmd.Parameters.AddWithValue("@quantity", int.Parse(cbqty.SelectedItem.ToString()));
+                cmd.Parameters.AddWithValue("@category", rbelec.Checked?"Electronics":"Gaming");
+                cmd.Parameters.AddWithValue("@membership", chprime.Checked);
+                cmd.Parameters.AddWithValue("@buydate", dtp.Value);
+
+                int x = cmd.ExecuteNonQuery();
+                if (x > 0)
+                {
+                    MessageBox.Show("Data Filled Successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Data can't be filled");
+                }
             }
             else
             {

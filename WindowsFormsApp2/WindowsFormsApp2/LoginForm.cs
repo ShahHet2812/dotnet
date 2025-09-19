@@ -54,5 +54,10 @@ namespace WindowsFormsApp2
                 tbpass.UseSystemPasswordChar = false;
             }
         }
+
+        private void tbpass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

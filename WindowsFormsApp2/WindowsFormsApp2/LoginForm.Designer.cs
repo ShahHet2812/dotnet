@@ -68,6 +68,7 @@
             this.tbpass.Name = "tbpass";
             this.tbpass.Size = new System.Drawing.Size(100, 20);
             this.tbpass.TabIndex = 3;
+            this.tbpass.TextChanged += new System.EventHandler(this.tbpass_TextChanged);
             // 
             // btsub
             // 
